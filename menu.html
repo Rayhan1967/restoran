@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Sedap Rasa - Daftar Menu & Informasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header & Navigasi Utama -->
+        <header>
+            <h1>Restoran Sedap Rasa</h1>
+            <nav class="nav-menu">
+                <a href="menu.html" class="active">Menu Utama</a>
+                <a href="#video">Video Profil</a>
+                <a href="#lokasi">Lokasi & Kontak</a>
+                <a href="https://www.google.com" target="_blank" class="nav-ext">Cari di Google</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Paragraf Pembuka -->
+            <section class="welcome-box">
+                <h2>Selamat Datang!</h2>
+                <p>Kami menyajikan berbagai macam hidangan lezat dan minuman segar yang dibuat dari bahan-bahan berkualitas tinggi untuk memanjakan lidah Anda. Pilih menu favorit Anda di bawah ini!</p>
+            </section>
+
+            <!-- Bagian Video Profil (dengan ID Anchor) -->
+            <section id="video" class="section-block">
+                <h2>Video Profil & Suasana Restoran</h2>
+                <div class="video-wrapper">
+                    <video controls poster="poster.jpg">
+                        <source src="promo-restoran.mp4" type="video/mp4">
+                        <source src="promo-restoran.webm" type="video/webm">
+                        Browser Anda tidak mendukung pemutaran elemen video HTML5.
+                    </video>
+                </div>
+            </section>
+
+            <!-- Bagian Daftar Menu -->
+            <section id="menu" class="section-block">
+                <h2>Daftar Harga Menu Restoran</h2>
+                <ul class="menu-list">
+                    <li>
+                        <span>Nasi Goreng Spesial</span>
+                        <span class="price">&dollar;2.50</span>
+                    </li>
+                    <li>
+                        <span>Sate Ayam Madura (10 Tusuk)</span>
+                        <span class="price">&dollar;2.00</span>
+                    </li>
+                    <li>
+                        <span>Rendang Daging Sapi</span>
+                        <span class="price">&dollar;3.00</span>
+                    </li>
+                    <li>
+                        <span>Es Teh Manis Segar</span>
+                        <span class="price">&dollar;0.60</span>
+                    </li>
+                    <li>
+                        <span>Kopi Susu Gula Aren</span>
+                        <span class="price">&dollar;1.50</span>
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <!-- Bagian Informasi Lokasi & Kontak (Link Email) -->
+            <section id="lokasi" class="section-block">
+                <h2>Informasi Lokasi & Reservasi</h2>
+                <address>
+                    <strong>Alamat Restoran:</strong><br>
+                    Jl. Merdeka No. 45, Tangerang Selatan, Banten<br>
+                    <strong>Jam Operasional:</strong> Buka setiap hari: 08.00 &ndash; 22.00 WIB
+                </address>
+
+                <div class="contact-box">
+                    <p>Ada pertanyaan atau ingin melakukan reservasi meja?</p>
+                    <a href="mailto:info@sedaprasa.com" class="btn btn-email">Kirim Email Reservasi</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer dengan Copyright -->
+        <footer>
+            <p>&copy; 2026 Restoran Sedap Rasa. Hak Cipta Dilindungi.</p>
+            <p><a href="#top" class="back-top">&uarr; Kembali ke Atas</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
