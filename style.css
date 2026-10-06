@@ -197,3 +197,105 @@ footer {
     font-size: 0.85rem;
     color: #94a3b8;
 }
+
+/* Styling untuk Fieldset Form */
+.form-section {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.form-section legend {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* Styling Pilihan Menu (Checkbox & Input Qty) */
+.menu-category {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.menu-category strong {
+    display: block;
+    color: #0f172a;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+
+.menu-item label {
+    font-size: 0.9rem;
+    color: #334155;
+    cursor: pointer;
+}
+
+.qty-input {
+    width: 60px;
+    padding: 4px 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Styling Metode Pembayaran */
+.payment-option {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: #f8fafc;
+}
+
+.payment-option label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.pay-logo {
+    height: 20px;
+    object-fit: contain;
+    margin-left: 5px;
+}
+
+.card-input-box {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.card-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+/* Reset CSS Input Tanggal & Textbox */
+input[type="date"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+}
