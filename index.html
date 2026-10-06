@@ -114,6 +114,110 @@
             </tbody>
         </table>
 
+        <!-- FORM PEMESANAN & PEMBAYARAN -->
+        <h2>Form Pemesanan & Reservasi Meja</h2>
+        <div class="form-wrapper">
+            <form action="proses_booking.php" method="post">
+                
+                <!-- Bagian 1: Data Diri -->
+                <fieldset class="form-section">
+                    <legend>1. Data Pemesan</legend>
+                    <table class="form-table">
+                        <tr>
+                            <td class="label-col"><label for="nama">Nama Lengkap</label></td>
+                            <td class="separator">:</td>
+                            <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required></td>
+                        </tr>
+                        <tr>
+                            <td class="label-col"><label for="nohp">No. HP / WhatsApp</label></td>
+                            <td class="separator">:</td>
+                            <td><input type="text" id="nohp" name="nohp" placeholder="08xxxxxxxxxx" required></td>
+                        </tr>
+                        <tr>
+                            <td class="label-col"><label for="tgl_booking">Tanggal Booking</label></td>
+                            <td class="separator">:</td>
+                            <td><input type="date" id="tgl_booking" name="tgl_booking" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <!-- Bagian 2: Pilihan Menu & Jumlah -->
+                <fieldset class="form-section">
+                    <legend>2. Pilihan Menu & Jumlah Item</legend>
+                    <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 10px;">Centang menu yang diinginkan dan masukkan jumlah pesanannya.</p>
+                    
+                    <div class="menu-category">
+                        <strong>Makanan Utama</strong>
+                        <div class="menu-item">
+                            <label><input type="checkbox" name="menu[]" value="Nasi Goreng"> Nasi Goreng Spesial</label>
+                            <input type="number" name="qty_nasgor" min="1" placeholder="Jml" class="qty-input">
+                        </div>
+                        <div class="menu-item">
+                            <label><input type="checkbox" name="menu[]" value="Sate Ayam"> Sate Ayam Madura (10 Tusuk)</label>
+                            <input type="number" name="qty_sate" min="1" placeholder="Jml" class="qty-input">
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <strong>Minuman</strong>
+                        <div class="menu-item">
+                            <label><input type="checkbox" name="menu[]" value="Es Teh"> Es Teh Manis Segar</label>
+                            <input type="number" name="qty_teh" min="1" placeholder="Jml" class="qty-input">
+                        </div>
+                        <div class="menu-item">
+                            <label><input type="checkbox" name="menu[]" value="Kopi Aren"> Kopi Susu Gula Aren</label>
+                            <input type="number" name="qty_kopi" min="1" placeholder="Jml" class="qty-input">
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <strong>Dessert</strong>
+                        <div class="menu-item">
+                            <label><input type="checkbox" name="menu[]" value="Puding"> Puding Cokelat Lumer</label>
+                            <input type="number" name="qty_puding" min="1" placeholder="Jml" class="qty-input">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Bagian 3: Metode Pembayaran -->
+                <fieldset class="form-section">
+                    <legend>3. Metode Pembayaran</legend>
+                    
+                    <!-- Pilihan Kartu Debit/Kredit -->
+                    <div class="payment-option">
+                        <label>
+                            <input type="radio" name="metode_bayar" value="Kartu" required>
+                            <strong>Kartu Debit / Kredit</strong>
+                            <!-- Logo Placeholder untuk Visa & Mastercard -->
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="pay-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="pay-logo">
+                        </label>
+                        <div class="card-input-box">
+                            <input type="text" name="nomor_kartu" placeholder="Masukkan 16 Digit Nomor Kartu Anda" class="card-input">
+                        </div>
+                    </div>
+
+                    <!-- Pilihan Dompet Digital -->
+                    <div class="payment-option">
+                        <label>
+                            <input type="radio" name="metode_bayar" value="E-Wallet" required>
+                            <strong>Dompet Digital (GoPay / e-Money)</strong>
+                            <!-- Logo Placeholder untuk Dompet Digital -->
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="GoPay" class="pay-logo" style="height: 18px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_ovo_purple.svg" alt="OVO" class="pay-logo" style="height: 16px;">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Tombol Submit -->
+                <div class="btn-group">
+                    <button type="submit" class="btn-submit">Kirim Pesanan Sekarang</button>
+                    <button type="reset" class="btn-reset">Batal / Reset</button>
+                </div>
+
+            </form>
+        </div>
+
         <!-- VIDEO PROFIL RESTORAN -->
         <h2>Video Profil & Suasana Restoran</h2>
         <div class="video-container">
